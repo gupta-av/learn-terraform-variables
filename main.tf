@@ -11,10 +11,9 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "~>3.28.0"
+      version = "~>3.76.0"
     }
   }
-  required_version = ">=0.14.0"
 }
 
 provider "aws" {
@@ -131,8 +130,8 @@ module "ec2_instances" {
   }
 }
 
-module "aws_s3_bucket" {
+/*module "aws_s3_bucket" {
   source  = "app.terraform.io/policy-as-code-training/terraform-aws-s3-bucket-ag/aws"
   version = "1.0.0"
   bucket_name = "s3-bucket-ag1008"
-}
+}*/
